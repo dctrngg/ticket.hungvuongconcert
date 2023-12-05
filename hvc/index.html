@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hung Vuong Concert</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="#">Hung Vuong Concert</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Đêm Diễn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Về Chúng Tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Về Chúng Tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Đối Tác</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-dark d-none d-lg-block" href="#anjoy">DELIGHT</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h1 class="display-4 fw-bold">Hung Vuong Concert</h1>
+                    <p>
+                        Hùng Vương Concert là chương trình ca nhạc và một chuỗi các hoạt động tình nguyện với mục đích
+                        vận động, quyên góp từ thiện, được tổ chức hằng năm tại trường THPT chuyên Hùng Vương, tỉnh Bình
+                        Dương. Đây là một chương trình hoành tráng, đặc sắc, được tổ chức quy mô, chuyên nghiệp với sự
+                        góp mặt của nhiều ca sĩ, diễn viên được đông đảo khán giả yêu thích.</p>
+                    <p>Chương trình vừa là món quà tinh thần hấp dẫn sau một mùa học tập căng thẳng cho các bạn trẻ
+                        trong khu vực tỉnh Bình Dương và các khu vực lân cận, đồng thời là cánh cửa mở ra vô vàn cơ hội
+                        cho các vùng khó khăn, chậm phát triển nói chung và các hộ gia đình, trẻ em khó khăn nói riêng.
+                        Ngoài ra Hùng Vương Concert còn là một cơ hội, một sân chơi cho các bạn trẻ trải nghiệm, rèn
+                        luyện, mài dũa các kĩ năng khi làm việc một môi trường trẻ trung, năng động, chuyên nghiệp.</p>
+                    <button class="btn btn-outline-dark btn-lg">Projects</button>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-container">
+
+                        <input class="input" type="text" id="userData" placeholder="Nhập dữ liệu...">
+
+                        <button class="button" id="xuLyButton">Tìm Kiếm</button>
+                        <div class="output"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="carousel" id="carousel">
+        <div class="carousel_item">
+            <img  class=" carousel_img" src="img/hero.webp" alt="" >
+            <img  class=" carousel_img"src="img/hero.webp"  alt="" >
+            <img  class=" carousel_img"src="img/demdien.jpg" alt="" >
+            <img  class=" carousel_img"src="img/hero.webp" alt="" >
+        </div>
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">About Me</h2>
+            <p>I'm Dc Trng, a dedicated developer with a knack for turning ideas into functional code. From front-end
+                finesse to back-end robustness, I'm well-versed in languages like Python, JavaScript, and Java. I'm
+                passionate about creating user-centered applications that marry form and function seamlessly. Let's
+                collaborate and create something amazing.</p>
+
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Testimonials</h2>
+            <div id="carouselExample" class="carousel slide carousel-dark carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis orci enim, ac
+                            auctor ex iaculis ut. Mauris ut elit mi. Sed nec quam bibendum, congue augue ut, molestie
+                            tellus. Fusce vel semper dolor." </p>
+                        <h5>John Doe</h5>
+                    </div>
+                    <div class="carousel-item">
+                        <p>hehe
+                        </p>
+                        <h5>June Doe</h5>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non metus eu sem ultrices
+                            tincidunt sit amet ac nisi. In hac habitasse platea dictumst. Aliquam pellentesque diam non
+                            eros feugiat maximus." </p>
+                        <h5>Johnny Doe</h5>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Contact Me</h2>
+            <div class="row">
+                <div class="col-sm-4 mt-4">
+                    <a href="#">ductrungnguyen30@gmail.com</a>
+                </div>
+                <div class="col-sm-4 mt-4">
+                    <div class="social-media">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-4">
+                    <a href="#">+84 068 037 559</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-center p-3 bg-body-tertiary">
+        <div>© 2023. All Rights Reserved.</div>
+    </footer>
+    <script src="sheets.js"> </script>
+</body>
+
+</html>

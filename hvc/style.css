@@ -1,0 +1,276 @@
+section [class^="container"] {
+  padding: 4rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  section [class^="container"] {
+    padding: 4rem;
+  }
+
+  nav [class^="container"] {
+    padding: 0 4rem;
+  }
+}
+
+section:not(:first-of-type) {
+  text-align: center;
+}
+
+section:nth-child(2n) {
+  background-color: #ecf2ff;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:not(.btn):hover {
+  color: #f5a841;
+}
+
+section .card,
+.btn-outline-dark {
+  border: 2px solid #000000;
+  box-shadow: 4px 4px #000000;
+  transition: all 0.4s;
+}
+
+.btn-outline-dark:hover {
+  box-shadow: 4px 4px #f5a841;
+}
+
+section .card {
+  max-width: 22rem;
+  margin-inline: auto;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: #ffffff;
+  height: 9vh;
+}
+
+.navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f5a841;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-item {
+    padding: 0 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+/* Image*/
+.image-section {
+  display: flex;
+  justify-self: center;
+
+}
+
+.image-section img {
+
+  width: 100%;
+}
+
+/* HVC */
+::placeholder{
+  text-transform: none;
+}
+.input-container {
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: row;
+}
+
+.input {
+  text-transform: uppercase;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 22px;
+  border: 1px solid black;
+  border-color: #fff;
+  /* box-sizing: border-box; */
+  color: #fff;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding-left: 20px;
+  width: 70%;
+  height: 70px;
+}
+.button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-color: #fff;
+  box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 70px 0;
+}
+
+section.hero {
+  height: 91vh;
+  color: #fff;
+  background-size: auto;
+  background-size: cover;
+  background-color:black;
+  /* background-image: url(img/hero.webp); */
+  padding-top: 10%;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  section.hero {
+    text-align: center;
+    padding: -70px;
+    height: fit-content;
+  }
+
+  section.hero .img-fluid {
+    width: 70%;
+  }
+
+  .master {
+    margin-left: -20%;
+    margin-top: 10%;
+  }
+
+  .master-footer {
+    margin-top: 40%;
+  }
+
+  .btn {
+    color: #ecf2ff;
+  }
+}
+
+
+
+/* CAROUSEL */
+.carousel{
+  height: 300px;
+  overflow: hidden;
+}
+.carousel_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  animation: carousel 10s linear infinite;
+}
+.carousel_img{
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes carousel{
+  100%{
+    transform:  translateX(-2560px);
+  }
+}
+/* CAROUSEL */
+
+
+@media screen and (max-width: 576px) {
+  .master {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+
+/* ABOUT */
+
+@media screen and (min-width: 1024px) {
+
+  section.about .container,
+  section.testimonials .container {
+    width: 75%;
+  }
+
+
+}
+
+/* PROJECTS */
+section.projects {
+  background-color: #89D6F1;
+}
+
+section.projects .card {
+  max-width: 17rem;
+  text-align: left;
+}
+
+section.projects .card img {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+
+
+/* TESTIMONIALS */
+
+section.testimonials .carousel-control-prev,
+section.testimonials .carousel-control-next {
+  width: 5%;
+}
+
+section.testimonials .carousel-item p {
+  max-width: 80%;
+  border-left: 5px solid #f5a841;
+  padding-left: 1rem;
+}
+
+section.testimonials .carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.testimonials .carousel.carousel-fade .carousel-item {
+  transition: opacity 0.5s;
+}
+
+/* CONTACT */
+
+section.contact .social-media a {
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+}
